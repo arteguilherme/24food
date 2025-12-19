@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Facebook, Instagram, Mail, Twitter } from "lucide-react";
 import Image from "next/image";
@@ -40,9 +39,9 @@ export const Footer = () => {
   const pathname = usePathname();
   return (
     <footer className="bg-neutral-800 ">
-      <div className="mx-auto py-24 w-full sm:max-w-[40rem] md:max-w-[48rem] md:px-8 lg:max-w-[64rem] xl:max-w-[83rem]">
-        <div className="grid grid-cols-1 gap-x-2 gap-y-10 lg:grid-cols-4 xl:grid-cols-3">
-          <div className="flex flex-col items-start">
+      <div className="mx-auto py-24 w-full sm:max-w-160 md:max-w-3xl md:px-8 lg:max-w-5xl xl:max-w-332">
+        <div className="grid grid-cols-1 px-2 gap-x-2 gap-y-10 lg:grid-cols-4 xl:grid-cols-3">
+          <div className="flex flex-col sm:items-start items-center">
             <Link href="/" className="flex items-center mb-10">
               <Image
                 src="/logo-white.svg"
@@ -66,7 +65,7 @@ export const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="relative z-10 grid grid-cols-2 gap-x-4 gap-y-8 text-sm/4 sm:grid-cols-4 lg:col-span-3 xl:col-span-2">
+          <div className="relative z-10 grid grid-cols-2 gap-x-0 sm:gap-x-4 gap-y-8 text-sm/4 sm:grid-cols-4 lg:col-span-3 xl:col-span-2">
             <div className="space-y-4">
               <h2 className="text-gray-100 font-bold text-xl">Company</h2>
               <div className="flex flex-col space-y-4 text-gray-100 text-lg">
